@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Catalog</title>
+
+  <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="src/Catalog.js"></script>
+
+  <style>
+      #my_catalog ul {
+          border: 1px solid black;
+          min-height: 50px;
+      }
+  </style>
+</head>
+
+<body>
+    <div id="my_catalog">
+        <ul class="available">
+            <li data-prod_id="p1">Product 1</li>
+            <li data-prod_id="p2">Product 2</li>
+            <li data-prod_id="p3">Product 3</li>
+            <li data-prod_id="p4">Product 4</li>
+            <li data-prod_id="p5">Product 5</li>
+        </ul>
+        <ul class="selected"></ul>
+    </div>
+
+    <script>
+        new Catalog('my_catalog');
+    </script>
+</body>
+</html>
